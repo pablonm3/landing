@@ -1,9 +1,11 @@
 from flask import Flask, request, render_template, redirect, flash
 import os
 from telebot import TeleBot
+from flask_cors import CORS
 
 
 app = Flask(__name__)
+CORS(app)
 
 
 def send_telegram_msg(chat_id, bot_token, message, parse_mode="Markdown"):

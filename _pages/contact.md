@@ -13,7 +13,7 @@ nav_order: 4
   </div>
 
   <div class="contact-form">
-    <form action="https://8026-201-76-163-218.ngrok-free.app/submit" method="POST">
+    <form id="contactForm" onsubmit="handleSubmit(event)">
       <div class="form-group">
         <label for="name">Name:</label>
         <input type="text" class="form-control" id="name" name="name" required>
@@ -74,3 +74,22 @@ nav_order: 4
   padding: 10px 0;
 }
 </style>
+
+<script>
+async function handleSubmit(event) {
+    event.preventDefault();
+    
+    const formData = new FormData(event.target);
+    try {
+        const response = await fetch('https://pablomarino.com/api/submit', {
+            method: 'POST',
+            body: formData
+        });
+        
+        alert('Thank you for your message! I will get back to you soon.');
+    } catch (error) {
+        alert('Something went wrong. Please email me at pablo@pablomarino.com');
+        console.error('Error submitting form:', error);
+    }
+}
+</script>

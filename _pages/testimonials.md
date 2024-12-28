@@ -82,5 +82,12 @@ nav_order: 3
   .testimonial-images {
     width: 100%;
   }
+  
+  .header-bar h1 {
+    font-size: 4rem;
+    word-wrap: break-word;
+    padding: 0 10px;
+  }
+
 }
 </style>

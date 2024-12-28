@@ -84,7 +84,7 @@ nav_order: 3
   }
   
   .header-bar h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     word-wrap: break-word;
     padding: 0 10px;
   }

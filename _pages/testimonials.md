@@ -13,7 +13,7 @@ nav_order: 3
     <h2>What clients and coworkers say about me</h2>
   </div>
   <div>
-  <h3><a href="https://www.linkedin.com/in/pablonm/" target="_blank">On LinkedIn</a></h3>
+  <h2><a href="https://www.linkedin.com/in/pablonm/" target="_blank">LinkedIn</a></h2>
     <a href="https://www.linkedin.com/in/pablonm/" target="_blank">
       <img src="{{ '/assets/img/linkedin1.png' | relative_url }}" 
            alt="LinkedIn Testimonials"
@@ -32,7 +32,7 @@ nav_order: 3
   <br/>
   <br/>
     <div>
-    <h3><a href="https://www.upwork.com/freelancers/~01ee396571902d1d49" target="_blank">On Upwork</a></h3>
+    <h2><a href="https://www.upwork.com/freelancers/~01ee396571902d1d49" target="_blank">Upwork</a></h2>
       <a href="https://www.upwork.com/freelancers/~01ee396571902d1d49" target="_blank">
       <img src="{{ '/assets/img/upwork1.png' | relative_url }}" 
            alt="LinkedIn Testimonials"

@@ -7,9 +7,9 @@ layout: default
       {% if page.profile.image %}
         {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
         {% if page.profile.image_circular %}
-          {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+          {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle w-50' %}
         {% else %}
-          {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+          {% assign profile_image_class = 'img-fluid z-depth-1 rounded w-50 h-40' %}
         {% endif %}
         {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
         {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image cache_bust=true %}
@@ -58,6 +58,18 @@ layout: default
       </h2>
       {% include selected_papers.liquid %}
     {% endif %}
+
+    <!-- YouTube Video -->
+    <div class="youtube-video">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item"
+                src="https://www.youtube.com/embed/n59Y_P-yWu0"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+        </iframe>
+      </div>
+    </div>
 
     <!-- Social -->
     {% if page.social %}

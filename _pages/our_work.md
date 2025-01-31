@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /work_blog/
-title: My work
+title: Work Blog
 nav: true
 nav_order: 2
 
